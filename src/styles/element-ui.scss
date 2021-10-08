@@ -1,0 +1,161 @@
+// cover some element-ui styles
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+    font-weight: 400 !important;
+}
+.el-breadcrumb__inner a {
+    color:  #34495e;
+}
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+.cell {
+    .el-tag {
+        margin-right: 0px;
+    }
+}
+
+.small-padding {
+    .cell {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.fixed-width {
+    .el-button--mini {
+        padding: 7px 10px;
+        width: 60px;
+    }
+}
+
+.status-col {
+    .cell {
+        padding: 0 10px;
+        text-align: center;
+        .el-tag {
+            margin-right: 0px;
+        }
+    }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+    .el-upload {
+        width: 100%;
+        .el-upload-dragger {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+// dropdown
+.el-dropdown-menu {
+    a {
+        display: block
+    }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+    display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+.el-popup-parent--hidden {
+    .fixed-header {
+        padding-right: 15px;
+    }
+}
+
+.el-table thead {
+    color: #333;
+    font-weight: 600;
+}
+
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ivu-modal {
+        top: 0;
+    }
+    .modal_tontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        &>span:nth-child(1) {
+            width: 120px;
+            text-align: right;
+            margin-right: 15px;
+        }
+        .color_mandatory {
+            margin-left: 15px;
+            color: #ccc;
+        }
+        span.role_span {
+            width: 130px;
+        }
+        .el-input {
+            width: 217px;
+        }
+    }
+}
+
+.change_page {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    &>span {
+        color: #ccc;
+    }
+}
+
+// .table_content_list {
+//     .el-table .cell {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//     }
+//     .green,
+//     .yellow {
+//         width: 5px;
+//         height: 5px;
+//         border-radius: 50%;
+//         display: inline-block;
+//         margin-right: 5px;
+//     }
+//     .green {
+//         background-color: green;
+//     }
+//     .yellow {
+//         background-color: yellow;
+//     }
+// }
